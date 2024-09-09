@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Generator from "./components/Generator";
 import Hero from "./components/Hero";
 import Workout from "./components/Workout";
@@ -10,6 +10,12 @@ function App() {
   const [muscles, setMuscles] = useState([]);
   const [goals, setGoals] = useState("strength_power");
 
+  useEffect(() => {
+    if (workout) {
+      window.location.href = "#workout";
+    }
+  }, [workout]);
+
   function updateWorkout() {
     if (muscles.length < 1) {
       return;
@@ -17,8 +23,6 @@ function App() {
     let newWorkout = generateWorkout({ poison, muscles, goals });
     console.log(newWorkout);
     setWorkout(newWorkout);
-
-    window.location.href = "#workout";
   }
 
   return (
