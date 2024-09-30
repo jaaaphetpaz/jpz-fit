@@ -14,11 +14,13 @@ export default function Hero() {
         </h1>
       </div>
       <p className="text-sm md:text-base font-light">
-        I hereby acknowledge that I may become{" "}
-        <span className="text-orange-500 font-medium">unbelievably sexy</span>{" "}
-        and accept all risks of becoming the local{" "}
-        <span className="text-orange-500 font-medium">mass monstrosity,</span>{" "}
-        afflicted with severe body dismorphia, unable to fit through doors.
+        I hereby acknowledge the inevitable transformation into an{" "}
+        <span className="text-orange-500 font-medium">ABSOLUTE UNIT</span> and
+        accept all potential consequences of being mistaken as a{" "}
+        <span className="text-orange-500 font-medium">GREEK GOD</span>. I
+        promise that I shall navigate this new world of{" "}
+        <span className="text-orange-500 font-medium">GODLIKE PHYSIQUE</span>{" "}
+        with grace, humility, and an extra-large wardrobe.
       </p>
       <Button
         func={() => {
